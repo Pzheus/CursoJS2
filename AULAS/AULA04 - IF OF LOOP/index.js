@@ -1,18 +1,15 @@
-/*
+const listaDeEstados = ["RJ", "SP", "MG"];
 
-(
-    function () {
-        const meuNome= "Mateus"
+for(let estado of listaDeEstados){
+ console.log (estado + " é um estado brasileiro")
+};
+
+
+
+
+const str = "Mateus Henrique"
+
+for (let s of str){
+    console.log(s.toUpperCase())
 }
-)()
 
-meuNome; //Não será executado por está dentro da IIFE
-
-*/
-
-const resultado = (function(){
-    const meuNome = "Mateus"
-    return meuNome;
-})()
-
-console.log(resultado)
